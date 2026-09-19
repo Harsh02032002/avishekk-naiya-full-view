@@ -110,10 +110,10 @@ function CataloguePage() {
           </label>
         </div>
 
-        <section aria-label="Catalogue collections" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <section aria-label="Catalogue collections" className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {collections.map((collection) => (
             <article key={collection.name} className="group overflow-hidden rounded-md border border-border bg-card">
-              <div className="aspect-[4/5] overflow-hidden bg-image-surface">
+              <div className="aspect-[3/4] overflow-hidden bg-image-surface sm:aspect-[4/5]">
                 <img
                   src={collection.image}
                   alt={collection.alt}
@@ -123,11 +123,11 @@ function CataloguePage() {
                   className="h-full w-full object-contain transition-transform duration-500 motion-safe:group-hover:scale-[1.015]"
                 />
               </div>
-              <div className="px-4 pb-4 pt-3">
-                <h2 className="font-display text-xl leading-tight">{collection.name}</h2>
-                <p className="mt-0.5 text-xs text-muted-foreground">{collection.count} catalogues</p>
-                <Button variant="link" className="mt-2 h-auto gap-2 p-0 text-sm font-normal text-collection-link no-underline hover:no-underline">
-                  <span className="flex size-7 items-center justify-center rounded-full border border-gold"><ArrowRight aria-hidden="true" className="size-3.5" /></span>
+              <div className="px-3 pb-3 pt-2 sm:px-4 sm:pb-4 sm:pt-3">
+                <h2 className="font-display text-base leading-tight sm:text-xl">{collection.name}</h2>
+                <p className="mt-0.5 text-[11px] text-muted-foreground sm:text-xs">{collection.count} catalogues</p>
+                <Button variant="link" className="mt-1 h-auto gap-1.5 p-0 text-xs font-normal text-collection-link no-underline hover:no-underline sm:mt-2 sm:gap-2 sm:text-sm">
+                  <span className="flex size-6 items-center justify-center rounded-full border border-gold sm:size-7"><ArrowRight aria-hidden="true" className="size-3 sm:size-3.5" /></span>
                   View Collection
                 </Button>
               </div>
