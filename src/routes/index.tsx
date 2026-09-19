@@ -94,17 +94,17 @@ function CataloguePage() {
         </div>
       </header>
 
-      <main id="catalogue" className="mx-auto max-w-[1440px] px-5 pb-16 pt-4 sm:pt-5 lg:px-14">
-        <div className="mb-4 flex flex-col gap-4 sm:mb-5 sm:gap-5 lg:flex-row lg:items-end lg:justify-between">
+      <main id="catalogue" className="mx-auto max-w-[1440px] px-5 pb-16 pt-3 sm:pt-5 lg:px-14">
+        <div className="mb-3 flex flex-col gap-3 sm:mb-5 sm:gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <nav aria-label="Breadcrumb" className="mb-1 flex items-center gap-2 text-xs text-muted-foreground sm:mb-2">
+            <nav aria-label="Breadcrumb" className="mb-0.5 flex items-center gap-2 text-[11px] text-muted-foreground sm:mb-2 sm:text-xs">
               <Link to="/" className="hover:text-foreground">Home</Link><span>›</span><span>Browse the catalogue</span>
             </nav>
-            <h1 className="font-display text-3xl leading-none sm:text-4xl lg:text-5xl">Browse the catalogue</h1>
-            <p className="mt-1 text-xs text-muted-foreground sm:mt-2 sm:text-base">Explore our handcrafted collections, curated for your special moments.</p>
+            <h1 className="font-display text-2xl leading-none sm:text-4xl lg:text-5xl">Browse the catalogue</h1>
+            <p className="mt-1 hidden text-xs text-muted-foreground sm:block sm:text-base">Explore our handcrafted collections, curated for your special moments.</p>
           </div>
-          <label className="flex h-10 w-full items-center gap-3 rounded-md border border-input bg-background px-4 text-muted-foreground sm:h-12 lg:w-[330px]">
-            <Search aria-hidden="true" className="size-4 shrink-0 sm:size-5" />
+          <label className="flex h-9 w-full items-center gap-3 rounded-md border border-input bg-background px-3 text-muted-foreground sm:h-12 sm:px-4 lg:w-[330px]">
+            <Search aria-hidden="true" className="size-4 shrink-0" />
             <span className="sr-only">Search collections</span>
             <input type="search" placeholder="Search collections..." className="min-w-0 flex-1 bg-transparent text-xs text-foreground outline-none placeholder:text-muted-foreground sm:text-sm" />
           </label>
