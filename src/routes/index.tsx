@@ -106,7 +106,7 @@ function CataloguePage() {
           <label className="flex h-10 w-full items-center gap-3 rounded-md border border-input bg-background px-4 text-muted-foreground sm:h-12 lg:w-[330px]">
             <Search aria-hidden="true" className="size-4 shrink-0 sm:size-5" />
             <span className="sr-only">Search collections</span>
-            <input type="search" placeholder="Search collections..." className="min-w-0 flex-1 bg-transparent bg-transparent text-xs text-foreground outline-none placeholder:text-muted-foreground sm:text-sm" />
+            <input type="search" placeholder="Search collections..." className="min-w-0 flex-1 bg-transparent text-xs text-foreground outline-none placeholder:text-muted-foreground sm:text-sm" />
           </label>
         </div>
 
