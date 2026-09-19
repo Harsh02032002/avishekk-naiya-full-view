@@ -94,19 +94,19 @@ function CataloguePage() {
         </div>
       </header>
 
-      <main id="catalogue" className="mx-auto max-w-[1440px] px-5 pb-16 pt-5 lg:px-14">
-        <div className="mb-5 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+      <main id="catalogue" className="mx-auto max-w-[1440px] px-5 pb-16 pt-4 sm:pt-5 lg:px-14">
+        <div className="mb-4 flex flex-col gap-4 sm:mb-5 sm:gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <nav aria-label="Breadcrumb" className="mb-2 flex items-center gap-2 text-xs text-muted-foreground">
+            <nav aria-label="Breadcrumb" className="mb-1 flex items-center gap-2 text-xs text-muted-foreground sm:mb-2">
               <Link to="/" className="hover:text-foreground">Home</Link><span>›</span><span>Browse the catalogue</span>
             </nav>
-            <h1 className="font-display text-4xl leading-none sm:text-5xl">Browse the catalogue</h1>
-            <p className="mt-2 text-sm text-muted-foreground sm:text-base">Explore our handcrafted collections, curated for your special moments.</p>
+            <h1 className="font-display text-3xl leading-none sm:text-4xl lg:text-5xl">Browse the catalogue</h1>
+            <p className="mt-1 text-xs text-muted-foreground sm:mt-2 sm:text-base">Explore our handcrafted collections, curated for your special moments.</p>
           </div>
-          <label className="flex h-12 w-full items-center gap-3 rounded-md border border-input bg-background px-4 text-muted-foreground lg:w-[330px]">
-            <Search aria-hidden="true" className="size-5 shrink-0" />
+          <label className="flex h-10 w-full items-center gap-3 rounded-md border border-input bg-background px-4 text-muted-foreground sm:h-12 lg:w-[330px]">
+            <Search aria-hidden="true" className="size-4 shrink-0 sm:size-5" />
             <span className="sr-only">Search collections</span>
-            <input type="search" placeholder="Search collections..." className="min-w-0 flex-1 bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground" />
+            <input type="search" placeholder="Search collections..." className="min-w-0 flex-1 bg-transparent bg-transparent text-xs text-foreground outline-none placeholder:text-muted-foreground sm:text-sm" />
           </label>
         </div>
 
