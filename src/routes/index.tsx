@@ -55,24 +55,24 @@ function CataloguePage() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="bg-header text-header-foreground">
         <div className="border-b border-header-border bg-header-top">
-          <div className="mx-auto flex h-7 max-w-[1440px] items-center justify-center px-5 text-[10px] font-medium sm:justify-between lg:px-14">
-            <p className="flex items-center gap-3">
+          <div className="mx-auto flex h-5 max-w-[1440px] items-center justify-center px-5 text-[9px] font-medium sm:h-7 sm:justify-between sm:text-[10px] lg:px-14">
+            <p className="flex items-center gap-2 sm:gap-3">
               <span className="hidden sm:inline">✣&nbsp; Handcrafted Heritage</span>
               <span className="text-gold">|</span>
               <span>Premium Fabrics</span>
               <span className="text-gold">|</span>
               <span className="hidden sm:inline">Worldwide Shipping &nbsp;✣</span>
             </p>
-            <button className="hidden items-center gap-1 text-[10px] lg:flex" type="button">
+            <button className="hidden items-center gap-1 text-[9px] sm:text-[10px] lg:flex" type="button">
               India (INR) <ChevronDown aria-hidden="true" className="size-3" />
             </button>
           </div>
         </div>
 
-        <div className="mx-auto flex h-[68px] max-w-[1440px] items-center justify-between px-5 lg:px-14">
-          <Link to="/" aria-label="AVISHEKK NAIYA home" className="flex min-w-0 items-center gap-3">
-            <img src={logoAsset.url} alt="" className="size-11 shrink-0 rounded-full object-contain" />
-            <span className="truncate text-sm font-semibold tracking-[0.14em] sm:text-base">AVISHEKK NAIYA</span>
+        <div className="mx-auto flex h-14 max-w-[1440px] items-center justify-between px-5 sm:h-[68px] lg:px-14">
+          <Link to="/" aria-label="AVISHEKK NAIYA home" className="flex min-w-0 items-center gap-2 sm:gap-3">
+            <img src={logoAsset.url} alt="" className="size-9 shrink-0 rounded-full object-contain sm:size-11" />
+            <span className="truncate text-xs font-semibold tracking-[0.14em] sm:text-base">AVISHEKK NAIYA</span>
           </Link>
 
           <nav aria-label="Main navigation" className="hidden items-center gap-9 text-sm md:flex">
@@ -84,11 +84,11 @@ function CataloguePage() {
           </nav>
 
           <div className="flex items-center gap-0.5 sm:gap-1">
-            <Button variant="ghost" size="icon" aria-label="Search" className="text-header-foreground hover:bg-header-hover hover:text-gold"><Search /></Button>
-            <Button variant="ghost" size="icon" aria-label="Account" className="hidden text-header-foreground hover:bg-header-hover hover:text-gold sm:inline-flex"><UserRound /></Button>
-            <Button variant="ghost" size="icon" aria-label="Wishlist, 0 items" className="hidden text-header-foreground hover:bg-header-hover hover:text-gold sm:inline-flex"><Heart /></Button>
+            <Button variant="ghost" size="icon" aria-label="Search" className="size-8 text-header-foreground hover:bg-header-hover hover:text-gold sm:size-9"><Search className="size-[18px] sm:size-5" /></Button>
+            <Button variant="ghost" size="icon" aria-label="Account" className="hidden size-9 text-header-foreground hover:bg-header-hover hover:text-gold sm:inline-flex"><UserRound /></Button>
+            <Button variant="ghost" size="icon" aria-label="Wishlist, 0 items" className="hidden size-9 text-header-foreground hover:bg-header-hover hover:text-gold sm:inline-flex"><Heart /></Button>
             <span className="hidden text-xs sm:inline">0</span>
-            <Button variant="ghost" size="icon" aria-label="Shopping bag, 0 items" className="text-header-foreground hover:bg-header-hover hover:text-gold"><ShoppingBag /></Button>
+            <Button variant="ghost" size="icon" aria-label="Shopping bag, 0 items" className="size-8 text-header-foreground hover:bg-header-hover hover:text-gold sm:size-9"><ShoppingBag className="size-[18px] sm:size-5" /></Button>
             <span className="text-xs">0</span>
           </div>
         </div>
